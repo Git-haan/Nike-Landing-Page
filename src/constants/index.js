@@ -90,33 +90,41 @@ export const reviews = [
 ];
 
 
-export const footerLinks = [
+export const footerProducts = [
     {
-        title: "Products",
+        title: "PRODUCTS",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "NIKE DUNK", link: "/" },
+            { name: "AIR FORCE", link: "/" },
+            { name: "AIR MAX", link: "/" },
+            { name: "AIR JORDAN", link: "/" },
+            { name: "NIKE INFINITY", link: "/" },
+            { name: "NIKE BLAZER", link: "/" },
         ],
     },
+];
+export const footerHelp = [
     {
-        title: "Help",
+        title: "HELP",
         links: [
-            { name: "About us", link: "/" },
-            { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
+            { name: "Get Help", link: "/" },
+            { name: "Order Satus", link: "/" },
+            { name: "Shipping/Delivery", link: "/" },
+            { name: "Order Cancellation", link: "/" },
+            { name: "Payment Options", link: "/" },
+            { name: "Contact Us", link: "/" },
         ],
     },
+];
+export const footerCompany = [
     {
-        title: "Get in touch",
+        title: "COMPANY",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "About Nike", link: "/" },
+            { name: "News", link: "/" },
+            { name: "Careers", link: "/" },
+            { name: "Investors", link: "/" },
+            { name: "Sustainability", link: "/" },
         ],
     },
 ];
