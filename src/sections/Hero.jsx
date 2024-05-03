@@ -14,8 +14,8 @@ const Hero = () => {
             className="w-full p-2 flex sm:flex-col xl:flex-row justify-center min-h-screen gap-10 max-container">
             
             <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x">
-                <h1 className="font-klein text-8xl max-sm:text-[72px] max-sm:leading-[82]">
-                    <span className="xl:whitespace-nowrap z-10 pr-10">
+                <h1 className="font-klein text-8xl">
+                    <span className="md:whitespace-nowrap pr-10">
                         A NEW ERA OF 
                     </span>
                     <br />
@@ -38,23 +38,25 @@ const Hero = () => {
                     ))}
                 </div>
             </div>
-            <div className="relative flex justify-center items-center xl:min-h-screen max-xl:py-40">
-                <img
-                    src={ bigShoeImg }
-                    alt="shoe collection"
-                    width={610}
-                    height={500}
-                    className="object-contain relative z-10"
-                />
+            <div className='max-lg:hidden'>
+                <div className="relative flex justify-center items-center xl:min-h-screen max-xl:py-40">
+                    <img
+                        src={ bigShoeImg }
+                        alt="shoe collection"
+                        width={610}
+                        height={500}
+                        className="object-contain relative z-10"
+                    />
 
-                <div className="flex-col sm:gap-6 gap-4 sm:left-[10%] max-sm:px-6">
-                    {shoes.map((shoe) => (
-                        <div key={shoe}>
-                            <ShoeCard
-                                imgURL={shoe}
-                                changeBigShoeImage= {(shoe) => setBigShoeImg(shoe)} bigShoeImg={bigShoeImg}/>
-                        </div>
-                    ))}
+                    <div className="flex-col sm:gap-6 gap-4 sm:left-[10%] max-sm:px-6">
+                        {shoes.map((shoe) => (
+                            <div key={shoe}>
+                                <ShoeCard
+                                    imgURL={shoe}
+                                    changeBigShoeImage= {(shoe) => setBigShoeImg(shoe)} bigShoeImg={bigShoeImg}/>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

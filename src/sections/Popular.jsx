@@ -6,10 +6,10 @@ const Popular = () => {
         <section id="products"
         className="max-container">
             <div className="flex flex-col justify-start gap-5">
-                <h2 className="bg-white text-4xl font-klien">
+                <h2 className="text-4xl font-klien">
                     SHOP BY CLASSICS
                 </h2>
-                <p>
+                <p className="text-slate-600 text-lg leading-8">
                     Explore the pinnacle of excellence in quality and style with our highly coveted selections. 
                     Unveil a universe of unparalleled comfort, exquisite design, and exceptional value.                
                 </p>
