@@ -3,7 +3,7 @@ import ReviewCard from "../components/ReviewCard"
 
 const Reviews = () => {
     return (
-        <section className="max-container">
+        <section id="reviews" className="max-container">
             <h3 className="font-klien text-4xl text-center">CUSTOMER REVIEWS</h3>
             <p className="text-center text-lg leading-8 mt-6 mb-14">
                 Listen to heartfelt accounts from our delighted clients about their extraordinary encounter with us.

@@ -10,6 +10,8 @@ import headerLogo from './header-logo.svg'
 
 import landscape from './nike-landscape.png'
 
+import search from './search-icon.png'
+
 import offer from './offer.png'
 
 import shoe4 from './shoe4.svg'
@@ -18,7 +20,6 @@ import shoe6 from './shoe6.svg'
 import shoe7 from './shoe7.svg'
 import shoe8 from './shoe8.png'
 
-import thumbnailBackground from './thumbnail-background.svg'
 import thumbnailShoe1 from './thumbnail-shoe1.svg'
 import thumbnailShoe2 from './thumbnail-shoe2.svg'
 import thumbnailShoe3 from './thumbnail-shoe3.svg'
@@ -36,6 +37,8 @@ export {
 
     landscape,
 
+    search,
+
     offer,
     shoe4,
     shoe5,
@@ -43,7 +46,6 @@ export {
     shoe7,
     shoe8,
 
-    thumbnailBackground,
     thumbnailShoe1,
     thumbnailShoe2,
     thumbnailShoe3

@@ -25,10 +25,12 @@ const Hero = () => {
                 <p className="text-slate-600 text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
                     Embrace the Extraordinary: Explore Unrivaled Style in Nike's Latest Arrivals.
                 </p>
-                <Button
-                    label="SHOP NOW"
-                    iconURL={ arrowRight }>
-                </Button>
+                <a href='https://www.nike.com/'>
+                    <Button
+                        label="SHOP NOW"
+                        iconURL={ arrowRight }>
+                    </Button>
+                </a>
                 <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
                     {statistics.map((stat) => (
                         <div>

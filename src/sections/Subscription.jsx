@@ -2,7 +2,7 @@ import Button from "../components/Button"
 
 const Subscription = () => {
     return (
-        <section>
+        <section id="sign-up">
             <h1 className="text-4xl font-klien">
                 NIKE MEMBERSHIP
             </h1>

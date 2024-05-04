@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { headerLogo } from '../assets/images';
+import { headerLogo, search } from '../assets/images';
 import { hamburger } from '../assets/icons';
 import { navLinks } from '../constants';
 
@@ -20,18 +20,32 @@ const Nav = () => {
                         alt="Logo"
                     />
                 </a>
-                <ul className={`flex-1 flex justify-center items-center gap-16 ${isMenuOpen ? 'hidden' : 'block'} max-lg:hidden`}>
-                    {navLinks.map((item) => (
-                        <li key={item.label}>
-                            <a
-                                href={item.href}
-                                className="font-montserrat leading-normal text-lg text-slate-gray"
-                            >
-                                {item.label}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+                <div className={`${isMenuOpen ? 'hidden' : 'block'} max-lg:hidden`}>
+                    <ul className="flex-1 flex justify-center items-center gap-16">
+                        {navLinks.map((item) => (
+                            <li key={item.label}>
+                                <a
+                                    href={item.href}
+                                    className="leading-normal text-sm font-bold hover:text-slate-gray"
+                                >
+                                    {item.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className={`flex flex-row gap-2 ${isMenuOpen ? 'hidden' : 'block'} max-lg:hidden`}>
+                    <img src={search}
+                    alt='search icon'
+                    width={32}
+                    height={12}
+                    className='p-2 bg-slate-100 rounded-full'/>
+                    <input 
+                    type="text"
+                    placeholder='Search...'
+                    className="bg-slate-100 p-1 px-5 border rounded-full items-center"
+                    />
+                </div>
                 <div className={`max-lg:block ${isMenuOpen ? 'block' : 'hidden'}`}>
                     <button className="flex items-center" onClick={toggleMenu}>
                         <img 
@@ -50,7 +64,7 @@ const Nav = () => {
                             <li key={item.label}>
                                 <a
                                     href={item.href}
-                                    className="font-montserrat leading-normal text-lg font-semibold text-black hover:text-slate-600"
+                                    className="leading-normal text-sm font-semibold hover:text-slate-gray"
                                     onClick={toggleMenu}
                                 >
                                     {item.label}
