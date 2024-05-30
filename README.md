@@ -1,6 +1,7 @@
 # Nike Landing Page
 
 This repository contains the source code for a landing page heavily inspired by Nike's design. The landing page is built using HTML, CSS, and JavaScript.
+Click to [access now](https://nike-lander.vercel.app/).
 
 ![Nike Landing Page Preview](Implementation/LaptopView/home.png)
 
